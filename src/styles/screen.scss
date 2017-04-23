@@ -11,3 +11,63 @@ body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
 }
+
+.App {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+.Home {
+  text-align: center;
+
+  .random {
+    @include reset-list;
+
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    padding-left: 1em;
+  }
+}
+
+
+a {
+  &:link,
+  &:visited {
+    color: lime;
+  }
+
+  &:focus,
+  &:hover{
+    color: orange;
+  }
+
+  &:active {
+    color: blue;
+  }
+
+  a.active {
+    color: darkblue;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  ul {
+    @include reset-list;
+
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+  }
+}
