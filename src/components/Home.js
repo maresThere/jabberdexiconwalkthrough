@@ -7,7 +7,7 @@ import robot from '../images/robot.jpg'
 const Home = ({ entries }) => (
   <div className='Home'>
     <img src={robot} alt='robot meditating' />
-    <h2 className='learn'>Learn More about Terms Like:</h2>
+    <h2 className='learn'>Learn More About Terms Like:</h2>
     <ul className='random'>
       <EntryList entries={_.sampleSize(entries, 6)} />
     </ul>

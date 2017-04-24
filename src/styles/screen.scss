@@ -25,7 +25,6 @@ h2 {
 
 main {
   flex: 1;
-  margin: 30px;
 
   h2 {
     font-size: 2em;
@@ -43,14 +42,19 @@ main {
 }
 
 .learn {
-  font-size: 2em;
-  width: 100%;
+  font-size: 1.5em;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
   font-weight: lighter;
 }
 
 .Home {
   text-align: center;
+
+  img {
+    max-height: 400px;
+  }
 
   .random {
     @include reset-list;
@@ -89,7 +93,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  margin: 30px -5px;
   border-right: 1px solid rgba(139, 8, 142, 0.85);
   border-top: 1px solid rgba(139, 8, 142, 0.85);
 
@@ -117,6 +121,7 @@ nav {
   li {
     border: 1px solid rgba(139, 8, 142, 0.85);
     padding: 3px 5px;
+    box-shadow: 1px 1px rgba(139, 8, 142, 0.85);
   }
 }
 
@@ -125,12 +130,12 @@ footer {
   flex-direction: column;
   width: 80%;
   margin: 15px 0;
-  font-size: 1.3em;
+  font-size: 1.1em;
   border-left: 2px solid rgba(139, 8, 142, 0.85);
   border-bottom: 2px solid rgba(139, 8, 142, 0.85);
 
   h4 {
-    margin-left: 30px;
+    margin: 10px 30px;
     font-weight: lighter;
     font-style: italic;
   }
@@ -139,9 +144,9 @@ footer {
     @include reset-list;
 
     text-decoration: none;
-    margin: 5px 30px 30px 30px;
-    width: 125px;
-    padding: 2px 10px 10px 10px;
+    margin: 5px 30px 30px;
+    width: 110px;
+    padding: 10px;
     box-shadow: 1px 1px 4px rgb(77, 131, 158);
     border: 1px solid rgb(77, 131, 158);
     border-radius: 2px;
