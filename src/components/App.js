@@ -6,6 +6,9 @@ import {
   NavLink
 } from 'react-router-dom'
 import Entry from './Entry'
+import NewEntry from './NewEntry'
+import Search from './Search'
+import SearchForm from './SearchForm'
 import Browse from './Browse'
 import Home from './Home'
 import { get } from './Api'
@@ -21,14 +24,13 @@ class App extends Component {
       this.setState({ entries })
     })
   }
+
   render () {
     return <Router>
       <div className='App'>
         <header>
           <h1><Link to='/'>The Jabberdexicon</Link></h1>
-          <form action='#'>
-            <input type='search' />
-          </form>
+          <SearchForm />
         </header>
         <nav>
           <ul>
@@ -47,12 +49,12 @@ class App extends Component {
           <Route exact path='/browse/:to' render={(props) => (
             <Browse entries={this.state.entries} {...props} />
               )} />
-          <Route path='/entry/:slug' render={(props) => (
-            <Entry term='foo' definition='lorem Ipsonium' {...props} />
-        )} />
+          <Route path='/entry/:slug' component={Entry} />
+          <Route path='/new' component={NewEntry} />
+          <Route path='/search/:query' component={Search} />
         </main>
         <footer>
-          <button>Add an Entry</button>
+          <Link to='/new'>Add an Entry</Link>
         </footer>
       </div>
     </Router>
