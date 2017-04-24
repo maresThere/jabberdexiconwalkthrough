@@ -55,6 +55,7 @@ class App extends Component {
           <Route path='/search/:query' component={Search} />
         </main>
         <footer>
+          <h4>Are We Missing Something?</h4>
           <Link to='/new'>Add an Entry</Link>
         </footer>
       </div>
