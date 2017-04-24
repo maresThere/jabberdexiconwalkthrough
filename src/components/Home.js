@@ -6,9 +6,9 @@ import EntryList from './EntryList'
 const Home = ({ entries }) => (
   <div className='Home'>
     <img src='' alt='' />
-    <h3>Random Entries</h3>
+    <h2 className='learn'>Learn More about Terms Like:</h2>
     <ul className='random'>
-      <EntryList entries={_.sampleSize(entries, 4)} />
+      <EntryList entries={_.sampleSize(entries, 6)} />
     </ul>
   </div>
 )

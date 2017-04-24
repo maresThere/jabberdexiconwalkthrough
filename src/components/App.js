@@ -29,7 +29,7 @@ class App extends Component {
     return <Router>
       <div className='App'>
         <header>
-          <h1><Link to='/'>The Jabberdexicon</Link></h1>
+          <h1><Link to='/'>The <span>J</span>abberdexicon</Link></h1>
           <SearchForm />
         </header>
         <nav>
@@ -41,6 +41,7 @@ class App extends Component {
             ))}
             <li><NavLink to='/browse/0'>#</NavLink></li>
           </ul>
+          <hr />
         </nav>
         <main>
           <Route exact path='/' render={(props) => (

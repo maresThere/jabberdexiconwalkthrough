@@ -14,7 +14,7 @@ class Entry extends Component {
     const { entry } = this.state
     if (entry) {
       return <div className='Entry'>
-        <h2>{entry.term}</h2>
+        <h3>{entry.term}</h3>
 
         <div className='definition'>
           <p>{entry.definition}</p>

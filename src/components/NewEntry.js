@@ -15,7 +15,7 @@ class NewEntry extends Component {
   }
   render () {
     return <div className='NewEntry'>
-      <h2>Add an Entry</h2>
+      <h3>Add an Entry</h3>
       <form action='#' onSubmit={this._submit}>
         <p>
           <label>Term</label>

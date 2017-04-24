@@ -24,7 +24,7 @@ class Search extends Component {
 
   render () {
     return <div className='Search'>
-      <h2>Search for "{this.props.match.params.query}"</h2>
+      <h3>Search for "{this.props.match.params.query}"</h3>
       <EntryList entries={this.state.entries} />
     </div>
   }
