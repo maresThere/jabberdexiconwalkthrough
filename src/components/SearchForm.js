@@ -11,7 +11,7 @@ class SearchForm extends Component {
   render () {
     return <div className='SearchForm'>
       <form action='#' onSubmit={this._submit}>
-        <input type='search' ref='query' placeholder='Search Here' />
+        <input type='search' ref='query' placeholder=' Search Here' />
       </form>
     </div>
   }
