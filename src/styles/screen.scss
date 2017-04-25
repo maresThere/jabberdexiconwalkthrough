@@ -217,3 +217,23 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .Home {
+    img {
+      display: none;
+    }
+  }
+
+  nav {
+    ul {
+      width: 280px;
+    }
+
+    li {
+      font-size: 0.8em;
+      margin: 4px;
+    }
+  }
+
+}
