@@ -29,7 +29,7 @@ class App extends Component {
     return <Router>
       <div className='App'>
         <header>
-          <h1><Link to='/'>The <span>J</span>abberdexicon</Link></h1>
+          <h1><Link to='/'>The <span>J</span> abberdexicon</Link></h1>
           <SearchForm />
         </header>
         <nav>

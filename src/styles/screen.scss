@@ -93,9 +93,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px -5px;
-  border-right: 1px solid rgba(139, 8, 142, 0.85);
-  border-top: 1px solid rgba(139, 8, 142, 0.85);
+  margin: 30px 5px;
+  border-right: 2px solid rgba(139, 8, 142, 0.85);
+  border-top: 2px solid rgba(139, 8, 142, 0.85);
 
   a {
     text-decoration: none;
@@ -129,7 +129,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 15px 0;
+  margin: 15px 5px;
   font-size: 1.1em;
   border-left: 2px solid rgba(139, 8, 142, 0.85);
   border-bottom: 2px solid rgba(139, 8, 142, 0.85);
@@ -182,9 +182,24 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+  .Home {
+    img {
+      max-height: 250px;
+    }
+  }
+
   nav {
+    justify-content: center;
+    align-self: center;
+
+    ul {
+      width: 380px;
+      padding: 10px;
+    }
+
     li {
       font-size: 0.8em;
+      margin: 4px;
     }
   }
 }
